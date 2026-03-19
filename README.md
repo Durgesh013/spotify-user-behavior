@@ -146,6 +146,48 @@ This `README.md` provides a comprehensive overview of the project, from data pre
 *   **Confusion Matrix Observations**: The model correctly predicted 7797 'Active' users and 1578 'Inactive' users. Notably, 625 'Active' users were incorrectly predicted as 'Inactive', while zero 'Inactive' users were incorrectly predicted as 'Active'.
 *   **Model Persistence**: The final best model has been saved as `model.pkl` using `joblib` for future deployment and inference.
 
+# Spotify User Behavior Prediction 🎧
+
+## 📌 Project Overview
+This project predicts whether a user will remain **Active** or become **Inactive** based on their behavior.
+
+---
+
+## ⚙️ Tech Stack
+- Python
+- Scikit-learn
+- Pandas, NumPy
+- Machine Learning Pipeline
+
+---
+
+## 🚀 How to Run
+
+### 1. Install dependencies
+pip install -r requirements.txt
+
+### 2. Train model
+python src/train.py
+
+### 3. Run prediction
+python src/model_test.py
+
+---
+
+## 📊 Features Used
+- User demographics
+- Listening behavior
+- Engagement patterns
+- Signup date features (engineered)
+
+---
+
+## 🧠 Model Used
+- Logistic Regression (tuned using GridSearchCV)
+
+---
+
+## 📁 Project Structure
 ### Insights or Next Steps
 
 *   The model demonstrates high reliability in identifying truly active users and comprehensively capturing all inactive users, making it valuable for targeted retention campaigns.
